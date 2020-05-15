@@ -1,5 +1,5 @@
 require 'open-uri'
-require 'JSON'
+require 'json'
 
 file = open('https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list')
 ingredients = JSON.parse(file.read)
